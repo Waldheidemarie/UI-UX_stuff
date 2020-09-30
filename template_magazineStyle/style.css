@@ -1,0 +1,777 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans";
+}
+
+.body-wrapper {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 60px;
+}
+
+.body-wrapper-magazine {
+  padding: 0;
+  max-width: 100%;
+}
+
+.ease-out1 {
+  -webkit-transition: 0.1s ease-out all;
+  transition: 0.1s ease-out all;
+}
+
+.ease-out2 {
+  -webkit-transition: 0.2s ease-out all;
+  transition: 0.2s ease-out all;
+}
+
+.ease-out4 {
+  -webkit-transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all;
+}
+
+.ease-out6 {
+  -webkit-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all;
+}
+
+.ease-out8 {
+  -webkit-transition: 0.8s ease-out all;
+  transition: 0.8s ease-out all;
+}
+
+.ease-out10 {
+  -webkit-transition: 1s ease-out all;
+  transition: 1s ease-out all;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0;
+}
+
+header i {
+  float: right;
+  font-size: 40px !important;
+}
+header i:first-child {
+  float: left;
+}
+
+.landing-page-wrap {
+  position: relative;
+  width: 100%;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.card {
+  width: 100%;
+  position: relative;
+}
+
+.date,
+.issue {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Source Serif Pro", serif;
+}
+
+.issue {
+  font-size: 120px;
+  left: -240px;
+  top: 30%;
+  color: #e6e6e6;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 60px;
+  height: 80px;
+  width: auto;
+  opacity: 0;
+}
+
+.dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.dot1 {
+  top: 0;
+  left: 0;
+}
+
+.dot2 {
+  top: 0;
+  right: 0;
+}
+
+.dot3 {
+  bottom: 0;
+  left: 0;
+}
+
+.dot4 {
+  bottom: 0;
+  right: 0;
+}
+
+.card .cover {
+  position: relative;
+}
+
+.card .cover .image1 {
+  position: relative;
+  height: 400px;
+  background: url(https://notbigmuzzy.github.io/codepen/newyork.jpg) center bottom no-repeat;
+  background-size: cover;
+}
+
+.card .cover2 .image {
+  position: relative;
+  height: 360px;
+  background: url(https://notbigmuzzy.github.io/codepen/sanfranciso.jpg) right bottom no-repeat;
+  background-size: cover;
+  box-shadow: none;
+}
+
+.card .cover3 .image {
+  position: relative;
+  height: 320px;
+  background: url(https://notbigmuzzy.github.io/codepen/tuscany.jpg) right bottom no-repeat;
+  background-size: cover;
+  box-shadow: none;
+}
+
+.card .cover4 .image {
+  position: relative;
+  height: 280px;
+  background: url(https://notbigmuzzy.github.io/codepen/london.jpg) right bottom no-repeat;
+  background-size: cover;
+  box-shadow: none;
+}
+
+.card .cover1 {
+  width: 70%;
+  left: 30%;
+}
+
+.card .cover1 .image {
+  z-index: 9;
+}
+
+.card .cover1 .number {
+  float: right;
+  margin-right: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Source Serif Pro", serif;
+  color: #999;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.card .cover1 .number span {
+  font-size: 40px;
+}
+
+.city {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Source Serif Pro", serif;
+  color: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  bottom: -87px;
+  right: -55px;
+}
+
+.cover2 .city {
+  opacity: 0;
+}
+
+.cover3 .city {
+  opacity: 0;
+  bottom: -57px;
+  right: -30px;
+}
+
+.cover4 .city {
+  opacity: 0;
+  bottom: -57px;
+  right: -30px;
+}
+
+.card .cover2,
+.card .cover3,
+.card .cover4 {
+  position: absolute;
+  width: 50%;
+  top: 20px;
+  left: 50%;
+  z-index: 8;
+}
+
+.card .cover3 {
+  top: 40px;
+  z-index: 7;
+}
+
+.card .cover4 {
+  top: 60px;
+  z-index: 6;
+}
+
+.body-wrapper .fullscreen-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.magazine-wrap {
+  display: none;
+  background: url("https://notbigmuzzy.github.io/codepen//newyork.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.magazine-wrap-show {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.magazine-wrap-reading {
+  margin-right: 50%;
+}
+
+.magazine-wrap-reading .magazine-left {
+  width: 100%;
+}
+
+.magazine-wrap-reading .mag-header i {
+  display: none;
+}
+
+.mag-overlay {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mag-overlay-no-overflow {
+  overflow: hidden;
+}
+
+.magazine-body {
+  max-width: 1200px;
+  padding: 0 60px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.magazine-date {
+  position: fixed;
+  color: #fff;
+  top: 100px;
+  left: 0px;
+  height: calc(100vh - 100px);
+  width: 40px;
+  border-right: 2px solid #fff;
+}
+
+.magazine-date span {
+  margin-top: 47vh;
+  margin-left: -80px;
+  width: 200px;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Source Serif Pro", serif;
+}
+
+.mag-header {
+  width: 100%;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.mag-header h1 {
+  float: left;
+}
+
+.mag-header span {
+  display: none;
+  line-height: 0px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Source Serif Pro", serif;
+  margin: 0 20px;
+  opacity: 0.9;
+}
+
+.mag-header i {
+  font-size: 40px !important;
+  float: right;
+}
+
+.magazine-left {
+  float: left;
+  width: 50%;
+  max-width: 540px;
+  color: #fff;
+  font-family: "Source Serif Pro", serif;
+}
+
+.magazine-overview h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.magazine-overview > span {
+  font-size: 30px;
+}
+
+.magazine-overview > span:after {
+  content: "";
+  display: block;
+  background: red;
+  height: 4px;
+  width: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.magazine-overview h4 {
+  font-weight: 400;
+  font-family: "Source Serif Pro", serif;
+  margin-bottom: 20px;
+  opacity: 0.75;
+}
+
+.magazine-authors {
+  list-style: none;
+}
+
+.magazine-authors li {
+  margin-bottom: 20px;
+}
+
+.magazine-authors li:first-child {
+  display: block !important;
+}
+
+.magazine-authors li a {
+  display: block;
+}
+
+.magazine-authors img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.magazine-authors span {
+  line-height: 40px;
+}
+
+.magazine-right {
+  float: right;
+  width: 50%;
+  color: #fff;
+  font-family: "Source Serif Pro", serif;
+  text-align: center;
+  list-style: none;
+}
+
+.article:after {
+  content: "";
+  display: block;
+  background: red;
+  height: 4px;
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.article:last-child:after {
+  display: none;
+}
+
+.article {
+  overflow: hidden;
+}
+
+.article img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.article h2 {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.article p {
+  width: 350px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.article a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  padding-top: 5px;
+}
+
+.magazine-triangle {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  text-align: center;
+  border-width: 0 0 100vh 200px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.magazine-triangle-active {
+  right: 0;
+}
+
+.back {
+  display: none;
+  color: #999;
+  border: 1px solid #999;
+  padding: 20px;
+  position: absolute;
+  right: 2%;
+  bottom: 20px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 999;
+  border-radius: 50%;
+  height: 87px;
+  line-height: 40px;
+}
+
+.back:hover {
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.magazine-read {
+  display: none;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000;
+  padding: 0 60px;
+  text-align: center;
+  display: none;
+}
+
+.magazine-read .mag-header {
+  color: #000;
+}
+
+.read-body {
+  padding: 80px 0;
+}
+
+.read-body img {
+  max-width: 100%;
+}
+
+.read-user-pic {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.read-user-name {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.read-head-fix {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  text-align: left;
+  padding: 10px 60px;
+  height: 60px;
+}
+
+.read-head-fix .read-user-pic {
+  float: left;
+  margin-right: 20px;
+}
+
+.read-head-fix .read-user-name {
+  line-height: 40px;
+}
+
+.read-head-fix ~ .read-title {
+  margin-top: 100px;
+}
+
+.read-title {
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-family: "Source Serif Pro", serif;
+}
+
+.read-share {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.read-share i {
+  margin-right: 5px;
+  color: red;
+}
+
+.read-pic {
+  margin-bottom: 20px;
+}
+
+.read-body p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Source Serif Pro", serif;
+  margin-bottom: 20px;
+}
+
+.read-body p.teaser-text {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.read-body p.quote {
+  padding-left: 20px;
+  border-left: 3px solid #999;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 22px;
+  color: #999;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: -60px;
+  right: 0;
+  width: 50%;
+  height: 60px;
+  background: #fff;
+}
+
+.bottom-bar-pull {
+  bottom: 0px;
+}
+
+.bottom-pagination {
+  line-height: 60px;
+  font-size: 40px;
+  font-family: "Source Serif Pro", serif;
+}
+
+.bottom-pagination span {
+  font-size: 30px;
+}
+
+.bottom-pagination:before {
+  content: "<";
+  display: inline-block;
+  color: #e6e6e6;
+  margin-right: 20px;
+}
+
+.bottom-pagination:after {
+  content: ">";
+  display: inline-block;
+  color: #e6e6e6;
+  margin-left: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 10px 40px;
+}
+
+.social-icons li a i {
+  font-size: 40px;
+  color: #e6e6e6;
+}
+
+.magazine-right li a:hover {
+  border: 1px solid #fff;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.magazine-right li a:hover img {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.magazine-right li a:hover h2 {
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.magazine-right li a:hover p {
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons:hover i {
+  color: #ccc;
+}
+
+.social-icons i:hover {
+  color: #000;
+}
+
+.landing-page-wrap:hover .cover1 {
+  left: 10%;
+}
+
+.landing-page-wrap:hover .date {
+  left: -80px;
+}
+
+.landing-page-wrap:hover .issue {
+  left: -200px;
+}
+
+.landing-page-wrap:hover .logo {
+  opacity: 1;
+}
+
+.landing-page-wrap:hover .dot {
+  opacity: 0;
+}
+
+.landing-page-wrap:hover .number {
+  color: #e6e6e6;
+}
+
+.landing-page-wrap:hover .image1 {
+  cursor: pointer;
+  box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.3);
+}
+
+.landing-page-wrap:hover .cover2 {
+  left: 62%;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.landing-page-wrap .cover2:hover {
+  left: 65%;
+}
+
+.landing-page-wrap:hover .cover3 {
+  left: 73%;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.landing-page-wrap .cover3:hover {
+  left: 76%;
+}
+
+.landing-page-wrap:hover .cover4 {
+  left: 83%;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page-wrap .cover4:hover {
+  left: 86%;
+}
+
+.landing-page-wrap:hover .city {
+  opacity: 1;
+}
+
+.landing-page-wrap .image1:hover ~ .city {
+  color: #999;
+}
+
+.landing-page-wrap .cover2:hover .city {
+  color: #999;
+}
+
+.landing-page-wrap .cover3:hover .city {
+  color: #999;
+}
+
+.landing-page-wrap .cover4:hover .city {
+  color: #999;
+}

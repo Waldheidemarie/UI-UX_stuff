@@ -1,0 +1,385 @@
+/* -----------------------------------------------
+This is a prototype, 
+it looks best full screen and desktop
+https://codepen.io/sdras/full/amJLxN/
+------------------------------------------------*/
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Ideal Sans A', 'Ideal Sans B', sans-serif;
+  overflow: hidden;
+}
+
+.sm-txt, h4, button.more, .select-item {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+
+.centered, section.filters, .icon-check-bright {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section.filters {
+  position: absolute;
+  z-index: 5000;
+  bottom: 0;
+  background: black;
+  width: 800px;
+  height: 75px;
+  opacity: 0;
+  padding: 20px 50px 18px;
+  border-radius: 5px 5px 0 0;
+}
+section.filters button {
+  border: none;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 6px 10px;
+  width: 150px;
+  border-radius: 3px;
+  margin-right: 5px;
+  color: #e4e3e3;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+section.filters button:focus {
+  outline: 0;
+}
+section.filters button.selected, section.filters button:hover {
+  -webkit-transition: 0.1s all ease-out;
+  transition: 0.1s all ease-out;
+  background: white;
+  color: black;
+}
+section.filters button.another {
+  width: 300px;
+  display: table;
+  margin: 0 auto;
+}
+
+.search {
+  color: white;
+  padding-bottom: 10px;
+}
+.search .input {
+  background: white;
+  width: 85%;
+  float: left;
+  color: black;
+  padding: 7px 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: none;
+}
+.search .mag-glass {
+  fill: white;
+  width: 15px;
+  height: 15px;
+}
+.search button.mag {
+  margin-top: -1px;
+  width: 9.75%;
+  padding: 8px 10px;
+}
+.search button.mag:hover .mag-glass {
+  fill: black;
+}
+
+section.map {
+  width: 1500px;
+  height: 1050px;
+}
+
+.map-area {
+  width: 110%;
+  height: 110%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.left, .outer-left, .left2, .outer-left2 {
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+.right, .right2 {
+  -webkit-transform: translateX(1046px);
+          transform: translateX(1046px);
+}
+
+.featured {
+  position: absolute;
+  top: 10px;
+}
+
+.featured-item {
+  background: white;
+  position: absolute;
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px 3px rgba(150, 150, 150, 0.5);
+}
+.featured-item h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.featured-item p {
+  padding-bottom: 10px;
+}
+
+.mid, .mid2 {
+  width: 600px;
+  -webkit-transform: translateX(388px);
+          transform: translateX(388px);
+}
+.mid .featured-img, .mid2 .featured-img {
+  float: right;
+}
+
+.mid2 {
+  -webkit-transform: translate3d(388px, 57px, 0);
+          transform: translate3d(388px, 57px, 0);
+}
+
+.featured-img {
+  height: 300px;
+}
+
+h4 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.divider {
+  width: 30px;
+  border-top: 2px solid black;
+}
+
+.left-side {
+  padding: 10px 30px;
+  width: 240px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+button.more {
+  padding: 10px 15px;
+  border: 2px solid black;
+  background: none;
+  -webkit-transition: none;
+  transition: none;
+  float: left;
+}
+button.more:hover {
+  background: black;
+  color: white;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.social {
+  display: inline;
+}
+.social .icon-noun_600849 {
+  width: 17px;
+  height: 17px;
+}
+.social .icon-message {
+  width: 14px;
+  height: 14px;
+}
+
+.i-text {
+  letter-spacing: 0.1em;
+}
+
+.social-item {
+  padding: 18px 0 0 15px;
+  float: left;
+}
+.social-item span {
+  vertical-align: super;
+  padding: 0 0 0 2px;
+}
+
+.clear {
+  clear: both;
+}
+
+.select-item {
+  background: white;
+  color: black;
+  border-top: 1px solid black;
+  width: calc(100% - 40px);
+  font-size: 11px;
+  padding: 19px 20px 21px;
+}
+.select-item .select-circ {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  float: left;
+  margin: -5px 10px 0 8px;
+}
+
+.grad {
+  background: conic-gradient(rgba(0, 255, 0, 0) 315deg, rgba(0, 255, 0, 0.32) 345deg, rgba(0, 255, 0, 0.7));
+  -webkit-animation: r 2s linear infinite;
+          animation: r 2s linear infinite;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  width: 450px;
+  height: 450px;
+  opacity: 0;
+}
+.grad img {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-check {
+  width: 15px;
+  height: 15px;
+  margin: 3px;
+  opacity: 0;
+  fill: white;
+}
+
+.icon-circles {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: 130px;
+}
+
+.icon-circle-left {
+  -webkit-transform: translateX(330px);
+          transform: translateX(330px);
+}
+
+.icon-circle-right {
+  -webkit-transform: translateX(1010px);
+          transform: translateX(1010px);
+}
+
+.sights-markers {
+  position: absolute;
+  top: 0;
+}
+
+.icon-noun_41233 {
+  position: absolute;
+}
+
+.m2, .m3, .m4 {
+  fill: #862d40;
+  width: 25px;
+  height: 25px;
+}
+
+.m1 {
+  -webkit-transform: translate3d(700px, 450px, 0);
+          transform: translate3d(700px, 450px, 0);
+  width: 45px;
+  height: 45px;
+  fill: #e62e09;
+}
+
+.m2 {
+  -webkit-transform: translate3d(550px, 410px, 0);
+          transform: translate3d(550px, 410px, 0);
+}
+
+.m3 {
+  -webkit-transform: translate3d(370px, 630px, 0);
+          transform: translate3d(370px, 630px, 0);
+}
+
+.m4 {
+  -webkit-transform: translate3d(900px, 390px, 0);
+          transform: translate3d(900px, 390px, 0);
+}
+
+.mouse {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  -webkit-transform: translate3d(500px, 400px, 0);
+          transform: translate3d(500px, 400px, 0);
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 1px 1px rgba(200, 200, 200, 0.3);
+}
+
+.left-side {
+  background: white;
+}
+
+.right .stagger, .right .select-item, .left .stagger, .left .select-item, .outer-left .stagger, .outer-left .select-item, .right2 .stagger, .right2 .select-item, .left2 .stagger, .left2 .select-item, .outer-left2 .stagger, .outer-left2 .select-item {
+  display: none;
+  opacity: 0;
+}
+.right h1, .left h1, .outer-left h1, .right2 h1, .left2 h1, .outer-left2 h1 {
+  margin-bottom: 0;
+}
+
+.featured, .sights-markers .icon {
+  visibility: hidden;
+}
+
+section.food-featured {
+  opacity: 0;
+  z-index: 10000000;
+}
+
+.sagrada .select-item {
+  z-index: 20000000;
+}
+
+.mobile-r {
+  float: right;
+  margin-top: -4px;
+}
+.mobile-r .mobile-send {
+  display: inline;
+  vertical-align: middle;
+}
+.mobile-r .m-rest {
+  padding-left: 5px;
+}
+.mobile-r .m-rest2 {
+  color: #20b500;
+  padding-left: 5px;
+}
+
+.quimet-hide, .sagrada-hide {
+  overflow: hidden;
+}
+
+.icon-check-bright {
+  position: absolute;
+  opacity: 0;
+  top: 200px;
+  fill: #20b500;
+  z-index: 200000000;
+}
