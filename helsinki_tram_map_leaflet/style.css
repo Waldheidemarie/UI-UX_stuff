@@ -1,0 +1,87 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  perspective: 500px;
+  perspective-origin: center center;
+}
+#map, #effects, #lines {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#map svg {
+  z-index: -1;
+}
+#effects {
+  z-index: 1000;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+#lines {
+  z-index: 1001;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+#lines .line {
+  flex: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.tram {
+  stroke: #EC407A;
+  fill: #EC407A;
+  fill-opacity: 0.3;
+  transition: all .5s ease;
+}
+
+.intersection-effect {
+  position: absolute;
+  border: 3px solid #0277bd;
+  border-radius: 50% 50%;
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 5px #666;
+}
+
+.label {
+  font-family: monospace;
+  font-size: 11px;
+  position: absolute;
+  right: 5px;
+  color: rgba(255, 255, 255, 0.9);
+  transition: opacity 8s ease-in;
+  opacity: 1;
+}
+.label.enter {
+  opacity: 0;
+}
+
+.leaflet-tile-container img {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: monospace;
+  font-size: 20px;
+  font-style: normal;
+  margin: 20px;
+}
+
+#start {
+  position: fixed;
+  left: calc(50% - 50px);
+  top: calc(50% - 15px);
+  z-index: 1000;
+  width: 100px;
+  height: 30px;
+}

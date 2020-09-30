@@ -1,0 +1,231 @@
+/**
+ * 06/20/2016
+ */
+
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+body {
+  background: #E9EBED;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.blue-bg {
+  height: 300px;
+  width: 100%;
+  background: #2587D2;
+  position: absolute;
+  z-index: -1;
+  margin-top: -100px !important;
+  margin-left: -8px;
+}
+
+
+.login {
+  width: 350px;
+  margin: 100px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.login-header {
+  background: #FFF;
+  padding: 31px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  color: #686868;
+  border-top: 1px solid #D4D4D4;
+  border-left: 1px solid #D4D4D4;
+  border-right: 1px solid #D4D4D4;
+}
+
+.login-container {
+  background: #FFF;
+  padding: 10px;
+  border-left: 1px solid #D4D4D4;
+  border-right: 1px solid #D4D4D4;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+.login input[type="facebook"] {
+  background: #3B5998;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 60px !important;
+}
+
+.login input[type="facebook"]:hover {
+  background: #263C68;
+}
+
+/* Buttons' focus effect */
+.login input[type="facebook"]:focus {
+  border-color: #05a;
+}
+
+.login input[type="twitter"] {
+  background: #12BEFF;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 60px !important;
+}
+
+.login input[type="twitter"]:hover {
+  background: #09A6E1;
+}
+
+.login-container,
+.social{
+  position:relative;
+  z-index:1;
+}
+
+.login-container{
+  z-index:2;
+}
+
+.or {
+  position:absolute;
+  z-index:1;
+  top:-20px;
+  left:42%;
+  width:44px;
+  height: 32px;
+  border-radius:45%;
+  border:1px solid #D4D4D4;
+  padding:2%;
+  text-align:center;
+  background-color:#fff;
+  line-height:40px;
+  color: #696969;
+}
+
+/* Buttons' focus effect */
+.login input[type="twitter"]:focus {
+  border-color: #05a;
+}
+
+.login input[type="facebook"] {
+    background-image: url(http://skylerhughesphotography.com/wp-content/uploads/2016/06/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 22px 18px;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    padding-left: 16px; 
+    vertical-align: middle;
+}
+
+.login input[type="facebook"]:hover {
+    background-image: url(http://skylerhughesphotography.com/wp-content/uploads/2016/06/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 22px 18px;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    padding-left: 16px; 
+    vertical-align: middle;
+}
+
+.login input[type="twitter"] {
+    background-image: url(http://skylerhughesphotography.com/wp-content/uploads/2016/06/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 22px 18px;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    padding-left: 16px; 
+    vertical-align: middle;
+}
+
+.login input[type="twitter"]:hover {
+    background-image: url(http://skylerhughesphotography.com/wp-content/uploads/2016/06/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 22px 18px;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    padding-left: 16px; 
+    vertical-align: middle;
+}
+
+.social p {
+  text-align: center;
+}
+
+.account a {
+  color: #2587D2;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.account a:hover {
+  color: #2587D2;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.social {
+  background: #F2F8FD;
+  padding: 40px 10px 20px 10px;
+  border-bottom: 1px solid #D4D4D4;
+  border-left: 1px solid #D4D4D4;
+  border-right: 1px solid #D4D4D4;
+  border-top: 1px solid #D4D4D4
+}

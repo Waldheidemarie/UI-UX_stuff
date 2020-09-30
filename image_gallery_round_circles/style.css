@@ -1,0 +1,218 @@
+@-webkit-keyframes btn-wake {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes btn-wake {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  font-family: helvetica, arial, sans-serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 5vh;
+  text-align: center;
+  z-index: 98;
+}
+header h1 {
+  font-family: "Abril Fatface", georgia, times, serif;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 0;
+  padding: 0;
+}
+header small {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  margin: 0.6rem 0;
+  letter-spacing: 0.05em;
+  display: block;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+nav a {
+  font-family: arial;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 15px;
+  -webkit-transition: 100ms ease all;
+  transition: 100ms ease all;
+  text-decoration: none;
+}
+nav a.wake {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: btn-wake;
+          animation-name: btn-wake;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+nav a.disable {
+  opacity: 0.3;
+}
+nav a.disable:hover {
+  background: none;
+}
+nav a.disable:active {
+  background: none;
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+nav a:active {
+  background: rgba(255, 255, 255, 0.7);
+}
+nav a + a {
+  margin-left: 60vw;
+}
+
+section {
+  width: 500px;
+  height: 500px;
+  min-width: 500px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+section .layer {
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section .layer:nth-child(1) {
+  z-index: 4;
+}
+section .layer:nth-child(2) {
+  z-index: 3;
+}
+section .layer:nth-child(3) {
+  z-index: 2;
+}
+section .layer:nth-child(4) {
+  z-index: 1;
+}
+section .layer.image-1 .slice.left .inner, section .layer.image-1 .slice.right .inner {
+  background-image: url("http://assets.droom.io/codepen/01.jpg");
+  background-color: #6fb4c4;
+}
+section .layer.image-2 .slice.left .inner, section .layer.image-2 .slice.right .inner {
+  background-image: url("http://assets.droom.io/codepen/02.jpg");
+  background-color: #d25223;
+}
+section .layer.image-3 .slice.left .inner, section .layer.image-3 .slice.right .inner {
+  background-image: url("http://assets.droom.io/codepen/03.jpg");
+  background-color: #fec763;
+}
+section .layer.image-4 .slice.left .inner, section .layer.image-4 .slice.right .inner {
+  background-image: url("http://assets.droom.io/codepen/04.jpg");
+  background-color: #a52a2c;
+}
+section .layer .slice {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+section .layer .slice.left .inner, section .layer .slice.right .inner {
+  width: 100%;
+  height: 100%;
+}
+section .layer .slice.left.next, section .layer .slice.right.next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+section .layer .slice.left.next .inner, section .layer .slice.right.next .inner {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+section .layer .slice.left.prev, section .layer .slice.right.prev {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+section .layer .slice.left.prev .inner, section .layer .slice.right.prev .inner {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+section .layer .slice.left, section .layer .slice.left .inner {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  background-position: 0 50%;
+}
+section .layer .slice.right, section .layer .slice.right .inner {
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  background-position: 100% 50%;
+}
+section .layer .slice.spin-in {
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+section .layer .slice.spin-in .inner {
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+section .layer .slice.spin-out {
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+section .layer .slice.spin-out .inner {
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
