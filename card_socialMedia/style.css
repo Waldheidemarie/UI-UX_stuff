@@ -1,0 +1,277 @@
+/* Improve Typography with CSS
+
+*, *:before, *:after {
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-feature-settings: "kern";
+	font-kerning: normal;
+	box-sizing: border-box;
+}
+html.touch *,html.touch *:before,html.touch *:after {
+	text-rendering: optimizeSpeed;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.5rem;
+	user-select: text;
+}
+
+*/
+
+body {
+  background: rgba(0, 0, 0, 0.03);
+  font-family: 'Karla', sans-serif;
+}
+
+
+.mainbox {
+  width: 375px;
+  height: 667px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: #000;
+  -webkit-box-shadow: 0px 0px 71px -10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 71px -10px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 71px -10px rgba(0,0,0,0.3);
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  font-size: 35px;
+  color: rgb(3, 3, 3);
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  white-space: pre-line;
+}
+
+.toppreheader {
+  width: 100%;
+  height: 64px;
+  position: relative;
+  text-align: center;
+  color:#FFF;
+  font-size: 17px;
+  padding-top: 30px;
+}
+
+.topleftmenu {
+  height: 3px;
+  width: 35px;
+  position: absolute;
+  display: block;
+  content: '';
+  z-index: 900;
+  left: 15px;
+  top: 44px;
+}
+
+.topleftmenu span, 
+.topleftmenu span:before {
+  width: 19px;
+  height: 3px;
+  background-color: #FFF;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.topleftmenu span:before {
+  top: -9px;
+  width: 14px;
+}
+
+
+.insidebox {
+  background: rgb(247, 127, 193);
+  background: -moz-linear-gradient(45deg, rgb(209, 120, 231) 0%, rgb(243, 144, 247) 47%, rgb(231, 152, 238) 47%, rgb(218, 146, 240) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgb(224, 128, 248)), color-stop(47%, rgb(209, 136, 243)), color-stop(47%, rgb(226, 124, 209)), color-stop(100%, rgb(206, 155, 240)));
+  background: -webkit-linear-gradient(45deg, rgb(241, 130, 227) 0%, rgb(203, 138, 233) 47%, rgb(177, 115, 212) 47%, rgb(227, 147, 243) 100%);
+  background: -o-linear-gradient(45deg, rgb(187, 125, 228) 0%, rgb(208, 148, 243) 47%, rgb(213, 140, 228) 47%, rgb(229, 150, 245) 100%);
+  background: -ms-linear-gradient(45deg, rgb(210, 135, 245) 0%, rgb(217, 117, 241) 47%, rgb(219, 156, 255) 47%, rgb(245, 149, 237) 100%);
+  background: linear-gradient(45deg, rgb(211, 132, 231) 0%, rgb(236, 125, 236) 47%, rgb(201, 142, 235) 47%, rgb(238, 137, 238) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0091e5', endColorstr='#00a2ff', GradientType=1 );
+  width: 100%;
+  height: 190px;
+  position: relative;
+}
+
+
+.profilebox {
+  width: 88.5%;
+  height: 555px;
+  background-color: #ee80df;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 600;
+  position: relative;
+  top: 22px;
+  color: #FFF;
+}
+
+.profileimage {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profileimage img {
+  width: 100%;
+}
+
+.followbutton {
+  position:absolute;
+  top:249px; 
+  right: 25px
+}
+
+
+.profiletitlelocation {
+  width: 100%;
+  height: 109px;
+  padding: 12% 7% 0 7%;
+  font-size: 13px;
+  white-space: pre-line;
+}
+
+.separationline {
+  width: 90%;
+  height: 1px;
+  border-bottom: 1px solid #d37be9;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.followerslikesholder {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.followers {
+  float: left;
+  width: 110px;
+  height: 100px;
+  padding-top: 16px;
+}
+
+.following {
+  float: left;
+  width: 110px;
+  height: 100px;
+  padding-top: 16px;
+}
+
+.likes {
+  float: left;
+  width: 110px;
+  height: 100px;
+  padding-top: 16px;
+  white-space: pre-line;
+}
+
+.followers span, .following span, .likes span {
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.bottomicons {
+  width: 100%;
+  height: 65px;
+  background-color: #FFF;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.bottomicons i {
+  width: 100%;
+  height: 85px;
+  font-size: 31px;
+  padding-top: 17px;
+}
+
+
+.outsidetoptext {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+  text-align: center;
+  margin: 4% 20% 2% 20%;
+}
+
+.outsidetoptext p:last-child {
+  font-weight: bold;
+}
+
+.outsidebottomtext {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+  text-align: center;
+  margin: 0 0 4% 0;
+}
+
+
+
+/* overwrite of some css style from materialize.css */
+
+.invipink {
+    background-color: #ffbdb8;
+}
+
+.invipink:hover {
+    background-color: #dba29d;
+}
+
+
+
+
+/* Hexagon and circle ------------------------------------------------------------ */ 
+
+.hexagon {
+  position: absolute;
+  right: 15px;
+  bottom: 14px;
+  margin: auto;
+  width: 4%;
+  height: 0;
+  padding-bottom: 4.666999%;
+  overflow: hidden;
+  -webkit-transform: rotate(-90deg) skewY(30deg) translateZ(0);
+          transform: rotate(-90deg) skewY(30deg) translateZ(0);
+  z-index: 900;
+}
+
+.hexagon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+          transform: skewY(-30deg) rotate(60deg);
+  z-index: 900;
+}
+
+.circle { 
+  width: 5px; 
+  height: 5px; 
+  background-color: #000; 
+  -moz-border-radius: 50px; 
+  -webkit-border-radius: 50px; 
+  border-radius: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  content: '';
+  z-index: 910;
+}
