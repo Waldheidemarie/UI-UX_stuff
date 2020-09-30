@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background {
+  background-color: black;
+  width: 105%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.background .col {
+  padding: 20px;
+  position: relative;
+  height: calc(100% - 40px);
+  width: 1000px;
+  background-color: rgb(29, 240, 187);
+  margin: 25px;
+  background: rgb(13, 231, 140) url(http://nullprogram.com/img/halftone/halftone-eye.png) no-repeat center fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.background .text {
+  width: calc(100% - 25px);
+  position: absolute;
+  bottom: 25px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  line-height: 110%;
+  text-align: center;
+  opacity: .85;
+}
+.background .col:nth-child(1) {
+  transform: skew(0.5deg, 0.5deg);
+  -ms-transform: skew(0.5deg, 0.5deg);
+  -webkit-transform: skew(0.5deg, 0.5deg);
+}
+.background .col:nth-child(2) {
+  z-index: 5;
+  transform: skew(0.5deg, -0.5deg);
+  -ms-transform: skew(0.5deg, -0.5deg);
+  -webkit-transform: skew(0.5deg, -0.5deg);
+}
+.background .col:nth-child(3) {
+  transform: skew(-0.5deg, 0.5deg);
+  -ms-transform: skew(-0.5deg, 0.5deg);
+  -webkit-transform: skew(-0.5deg, 0.5deg);
+}
+.background .col:nth-child(5) {
+  transform: skew(0.5deg, -0.5deg);
+  -ms-transform: skew(0.5deg, -0.5deg);
+  -webkit-transform: skew(0.5deg, -0.5deg);
+}

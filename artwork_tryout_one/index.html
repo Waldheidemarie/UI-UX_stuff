@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Generative Artworks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="site-canvas" id="app">
+  <div class="screen">
+    <router-view></router-view>
+    <h1>Generative<br>Artworks</h1>
+    <nav>
+      <router-link to="/">Design One</router-link>
+      <router-link to="/two">Design Two</router-link>
+      <router-link to="/three">Design Three</router-link>
+      <router-link to="/four">Design Four</router-link>
+    </nav>
+  </div>
+</div>
+
+<script type="text/x-template" id="home-component-template">
+  <div class="app-home">
+      <svg class="bg" :height="screen.height" :width="screen.width">
+        <line v-for="line in lines" :x1="line.pos1.x" :y1="line.pos1.y" :x2="line.pos2.x" :y2="line.pos2.y" style="stroke:rgb(100,100,100);stroke-width:1" />
+      </svg>
+      <div class="refresh" @click="setup"><refresh></refresh></div>
+  </div>
+</script>
+
+<script type="text/x-template" id="two-component-template">
+  <div class="app-two">
+      <svg class="bg" :height="screen.height" :width="screen.width">
+        <line v-for="line in lines" :x1="line.pos1.x" :y1="line.pos1.y" :x2="line.pos2.x" :y2="line.pos2.y" style="stroke:rgb(100,100,100);stroke-width:1" />
+      </svg>
+      <div class="refresh" @click="setup"><refresh></refresh></div>
+  </div>
+</script>
+
+<script type="text/x-template" id="refresh-component">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-reactid="1011"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+</script>
+<!-- partial -->
+  <script src='https://unpkg.com/vue'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.1/vue-resource.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
