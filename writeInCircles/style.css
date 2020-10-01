@@ -1,0 +1,46 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.upside-down {
+    transform: scale(-1);
+    display: block;
+}
+
+.container {
+    margin: auto;
+    height: 0;
+    width: 0;
+    position: relative;
+    text-align: center;
+    padding-right: 20px;
+    height: 500px;
+    width: 500px;
+}
+
+.target {
+    width: 0;
+    margin: 0 auto;
+}
+
+.sides {
+  color: #ccc;
+  line-height: 50px;
+}
+
+.target-b {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.outer {
+    font-family: Roboto Mono, monospace;
+    font-size: 42px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
