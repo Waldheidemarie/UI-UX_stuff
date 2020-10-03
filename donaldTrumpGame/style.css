@@ -1,0 +1,819 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+@-webkit-keyframes distort-trump {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+            transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0) rotate(1deg) scale(0.9, 0.9);
+            transform: translate(-3px, 0) rotate(1deg) scale(0.9, 0.9);
+  }
+  30% {
+    -webkit-transform: translate(0, 2px) rotate(0deg);
+            transform: translate(0, 2px) rotate(0deg);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg) scale(1.3, 1.3);
+            transform: translate(1px, -1px) rotate(1deg) scale(1.3, 1.3);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+  60% {
+    -webkit-transform: translate(-6px, 1px) rotate(0deg);
+            transform: translate(-6px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(4px, 1px) rotate(-1deg) scale(0.95, 0.95);
+            transform: translate(4px, 1px) rotate(-1deg) scale(0.95, 0.95);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    opacity: 0.75;
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px) rotate(1deg);
+            transform: translate(-2px, -2px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+            transform: translate(2px, 2px) rotate(0deg);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes distort-trump {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+            transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0) rotate(1deg) scale(0.9, 0.9);
+            transform: translate(-3px, 0) rotate(1deg) scale(0.9, 0.9);
+  }
+  30% {
+    -webkit-transform: translate(0, 2px) rotate(0deg);
+            transform: translate(0, 2px) rotate(0deg);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg) scale(1.3, 1.3);
+            transform: translate(1px, -1px) rotate(1deg) scale(1.3, 1.3);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+  60% {
+    -webkit-transform: translate(-6px, 1px) rotate(0deg);
+            transform: translate(-6px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(4px, 1px) rotate(-1deg) scale(0.95, 0.95);
+            transform: translate(4px, 1px) rotate(-1deg) scale(0.95, 0.95);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    opacity: 0.75;
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px) rotate(1deg);
+            transform: translate(-2px, -2px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+            transform: translate(2px, 2px) rotate(0deg);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@-webkit-keyframes raise-mirror {
+  to {
+    -webkit-transform: translate(-50%, -2em);
+            transform: translate(-50%, -2em);
+  }
+}
+@keyframes raise-mirror {
+  to {
+    -webkit-transform: translate(-50%, -2em);
+            transform: translate(-50%, -2em);
+  }
+}
+@-webkit-keyframes start-tickle {
+  0% {
+    -webkit-transform: translate(-70%, 7em);
+            transform: translate(-70%, 7em);
+  }
+  100% {
+    -webkit-transform: translate(-47%, 7em);
+            transform: translate(-47%, 7em);
+  }
+}
+@keyframes start-tickle {
+  0% {
+    -webkit-transform: translate(-70%, 7em);
+            transform: translate(-70%, 7em);
+  }
+  100% {
+    -webkit-transform: translate(-47%, 7em);
+            transform: translate(-47%, 7em);
+  }
+}
+@-webkit-keyframes end-tickle {
+  to {
+    -webkit-transform: translate(-50%, 30em);
+            transform: translate(-50%, 30em);
+  }
+}
+@keyframes end-tickle {
+  to {
+    -webkit-transform: translate(-50%, 30em);
+            transform: translate(-50%, 30em);
+  }
+}
+@-webkit-keyframes music-from-left {
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes music-from-left {
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes remove-music-from-left {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(-50em, 0);
+            transform: translate(-50em, 0);
+  }
+}
+@keyframes remove-music-from-left {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(-50em, 0);
+            transform: translate(-50em, 0);
+  }
+}
+@-webkit-keyframes music-from-right {
+  to {
+    -webkit-transform: translate(0, 0) rotateY(180deg);
+            transform: translate(0, 0) rotateY(180deg);
+  }
+}
+@keyframes music-from-right {
+  to {
+    -webkit-transform: translate(0, 0) rotateY(180deg);
+            transform: translate(0, 0) rotateY(180deg);
+  }
+}
+@-webkit-keyframes remove-music-from-right {
+  from {
+    -webkit-transform: translate(0, 0) rotateY(180deg);
+            transform: translate(0, 0) rotateY(180deg);
+  }
+  to {
+    -webkit-transform: translate(50em, 0) rotateY(180deg);
+            transform: translate(50em, 0) rotateY(180deg);
+  }
+}
+@keyframes remove-music-from-right {
+  from {
+    -webkit-transform: translate(0, 0) rotateY(180deg);
+            transform: translate(0, 0) rotateY(180deg);
+  }
+  to {
+    -webkit-transform: translate(50em, 0) rotateY(180deg);
+            transform: translate(50em, 0) rotateY(180deg);
+  }
+}
+@-webkit-keyframes shake-speaker {
+  to {
+    -webkit-transform: translateY(-0.5em);
+            transform: translateY(-0.5em);
+  }
+}
+@keyframes shake-speaker {
+  to {
+    -webkit-transform: translateY(-0.5em);
+            transform: translateY(-0.5em);
+  }
+}
+@-webkit-keyframes on-screen {
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+@keyframes on-screen {
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+@-webkit-keyframes off-screen {
+  to {
+    -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+  }
+}
+@keyframes off-screen {
+  to {
+    -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+  }
+}
+@-webkit-keyframes on-screen-weapons {
+  30% {
+    -webkit-transform: translateX(0) scale(0.5, 0.5);
+            transform: translateX(0) scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1, 1);
+            transform: translateX(0) scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes on-screen-weapons {
+  30% {
+    -webkit-transform: translateX(0) scale(0.5, 0.5);
+            transform: translateX(0) scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1, 1);
+            transform: translateX(0) scale(1, 1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes pop-troll-intro {
+  33% {
+    -webkit-transform: translate(-100%, -50%) scale3d(2, 2, 1);
+            transform: translate(-100%, -50%) scale3d(2, 2, 1);
+  }
+  66% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0) scale3d(1, 1, 1);
+            transform: translate(100%, 0) scale3d(1, 1, 1);
+  }
+}
+@keyframes pop-troll-intro {
+  33% {
+    -webkit-transform: translate(-100%, -50%) scale3d(2, 2, 1);
+            transform: translate(-100%, -50%) scale3d(2, 2, 1);
+  }
+  66% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0) scale3d(1, 1, 1);
+            transform: translate(100%, 0) scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes pop-troll {
+  33% {
+    -webkit-transform: translate(0, 0) scale3d(2, 2, 1);
+            transform: translate(0, 0) scale3d(2, 2, 1);
+  }
+  66% {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0) scale3d(1.75, 1.75, 1);
+            transform: translate(100%, 0) scale3d(1.75, 1.75, 1);
+  }
+}
+@keyframes pop-troll {
+  33% {
+    -webkit-transform: translate(0, 0) scale3d(2, 2, 1);
+            transform: translate(0, 0) scale3d(2, 2, 1);
+  }
+  66% {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0) scale3d(1.75, 1.75, 1);
+            transform: translate(100%, 0) scale3d(1.75, 1.75, 1);
+  }
+}
+@-webkit-keyframes pulse-troll {
+  from {
+    -webkit-transform: translate(-50%, 0) scale(1, 1);
+            transform: translate(-50%, 0) scale(1, 1);
+    width: 30em;
+  }
+  to {
+    -webkit-transform: translate(-50%, 0) scale(1.1, 1.1);
+            transform: translate(-50%, 0) scale(1.1, 1.1);
+    width: 30em;
+  }
+}
+@keyframes pulse-troll {
+  from {
+    -webkit-transform: translate(-50%, 0) scale(1, 1);
+            transform: translate(-50%, 0) scale(1, 1);
+    width: 30em;
+  }
+  to {
+    -webkit-transform: translate(-50%, 0) scale(1.1, 1.1);
+            transform: translate(-50%, 0) scale(1.1, 1.1);
+    width: 30em;
+  }
+}
+::-moz-selection {
+  background: black;
+}
+::selection {
+  background: black;
+}
+
+.play-again {
+  cursor: pointer;
+}
+
+.battle-animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.battle-animation .feather,
+.battle-animation .mirror {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 30em);
+          transform: translate(-50%, 30em);
+}
+.battle-animation .mirror img {
+  max-height: 25em;
+}
+.battle-animation .music .hand {
+  z-index: 100;
+  height: 12em;
+}
+.battle-animation .music .speaker {
+  height: 6em;
+  position: relative;
+  z-index: -1;
+  -webkit-animation: shake-speaker 0.1s infinite alternate;
+          animation: shake-speaker 0.1s infinite alternate;
+}
+.battle-animation .music .left, .battle-animation .music .right {
+  position: absolute;
+  bottom: 0;
+}
+.battle-animation .music .left {
+  left: -2em;
+  -webkit-transform: translateX(-50em);
+          transform: translateX(-50em);
+}
+.battle-animation .music .left .speaker {
+  left: -3em;
+}
+.battle-animation .music .right {
+  right: -2em;
+  -webkit-transform: rotateY(180deg) translateX(-50em);
+          transform: rotateY(180deg) translateX(-50em);
+}
+.battle-animation .music .right .speaker {
+  right: 3em;
+}
+
+.real-trump {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transition: 0.5s 1.5s;
+  transition: 0.5s 1.5s;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pop-troll-wrapper {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s 1.5s;
+  transition: 0.5s 1.5s;
+}
+
+.mirror .mirror {
+  -webkit-animation: 2s raise-mirror forwards;
+          animation: 2s raise-mirror forwards;
+}
+.mirror .pop-troll-wrapper {
+  visibility: hidden;
+  opacity: 0;
+}
+.mirror .real-trump-wrapper {
+  -webkit-animation: 0.5s distort-trump alternate infinite;
+          animation: 0.5s distort-trump alternate infinite;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.mirror .real-trump {
+  visibility: visible;
+  opacity: 1;
+  max-height: 20em;
+  position: relative;
+  left: 0;
+}
+
+.feather .feather {
+  -webkit-animation: 0.15s start-tickle alternate infinite;
+          animation: 0.15s start-tickle alternate infinite;
+}
+
+.feather.remove-feather .feather {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.music.remove-music .music .left {
+  -webkit-animation: 1.5s remove-music-from-left forwards;
+          animation: 1.5s remove-music-from-left forwards;
+}
+.music.remove-music .music .right {
+  -webkit-animation: 1.5s remove-music-from-right forwards;
+          animation: 1.5s remove-music-from-right forwards;
+}
+
+.music .music .left {
+  -webkit-animation: 1.5s music-from-left forwards;
+          animation: 1.5s music-from-left forwards;
+}
+.music .music .right {
+  -webkit-animation: 1.5s music-from-right forwards;
+          animation: 1.5s music-from-right forwards;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 43px -2px rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  min-height: 100vh;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.pop-troll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  width: 10em;
+  -webkit-animation: pop-troll-intro 3s infinite alternate;
+          animation: pop-troll-intro 3s infinite alternate;
+}
+.start-dancing .pop-troll {
+  -webkit-animation: pop-troll 3s infinite alternate !important;
+          animation: pop-troll 3s infinite alternate !important;
+}
+.start-battle .pop-troll {
+  -webkit-animation: pulse-troll 1s infinite alternate;
+          animation: pulse-troll 1s infinite alternate;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+section {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#start-screen {
+  position: relative;
+  background-image: url(https://geordiecam.files.wordpress.com/2012/12/troll_bridge.jpg);
+  background-position: 50% 100%;
+}
+section#end-screen {
+  background-image: url(http://www.nationofchange.org/news/wp-content/uploads/2016/02/bernie-sanders-e1455919401961.jpg);
+  background-position: 0 0;
+}
+section.active {
+  -webkit-box-flex: 10;
+          flex: 10;
+  visibility: visible;
+  opacity: 1;
+  overflow: hidden;
+}
+
+#dialog-close-button {
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  background: wheat;
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: fixed;
+  top: -1em;
+  right: -1em;
+}
+#dialog-close-button span {
+  font-size: 35px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  will-change: transform;
+  -webkit-transition: 0.5s -webkit-transform;
+  transition: 0.5s -webkit-transform;
+  transition: 0.5s transform;
+  transition: 0.5s transform, 0.5s -webkit-transform;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: translate(-50%, -48%);
+          transform: translate(-50%, -48%);
+}
+
+dialog {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  background: black;
+  color: white;
+  position: fixed;
+  top: 2em;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-200%);
+          transform: translateX(-50%) translateY(-200%);
+  border: 3px solid wheat;
+  width: 720px;
+  height: 200px;
+  background-image: url(https://s33.postimg.org/7213ldvcf/imageedit_2_2727380521.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.5s -webkit-transform;
+  transition: 0.5s -webkit-transform;
+  transition: 0.5s transform;
+  transition: 0.5s transform, 0.5s -webkit-transform;
+  border-radius: 6px;
+  max-width: 92%;
+}
+dialog.trump {
+  background-image: url(https://s.graphiq.com/sites/default/files/stories/t4/Donald_Trump_Offensive_Quotes_4067_5187.jpg);
+  height: 163px;
+}
+dialog.show {
+  -webkit-transform: translateX(-50%) translateY(0);
+          transform: translateX(-50%) translateY(0);
+}
+dialog .content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 70%;
+  padding-left: 31%;
+}
+dialog .start-over,
+dialog .continue {
+  position: absolute;
+  left: 50%;
+  bottom: -2.5em;
+  padding: 0.25em 0.5em 0.1em;
+  margin-left: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  background: wheat;
+  cursor: pointer;
+  font-family: fantasy;
+  letter-spacing: 1.8px;
+  font-size: 1rem;
+}
+dialog p {
+  letter-spacing: 1.8px;
+  word-spacing: 1.1px;
+  font-size: 18px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+}
+@media only screen and (max-width: 800px) {
+  dialog p {
+    font-size: 15px;
+  }
+}
+dialog p:nth-child(1) {
+  margin-top: 0;
+  -webkit-animation: type 4s steps(60, end);
+          animation: type 4s steps(60, end);
+}
+dialog p:nth-child(2) {
+  -webkit-animation: type2 7.5s steps(60, end);
+          animation: type2 7.5s steps(60, end);
+}
+
+body {
+  font-family: fantasy;
+}
+body:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background: url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0143/8708/rrRepublican_Elephant_shop_thumb.png) 0 0 repeat;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#weapons {
+  opacity: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  background: rgba(255, 255, 255, 0.6);
+  max-height: 200px;
+  -webkit-transform: translateX(-200%) scale(0.5, 0.5);
+          transform: translateX(-200%) scale(0.5, 0.5);
+  -webkit-transition: 0.5s 0.5s;
+  transition: 0.5s 0.5s;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.start-battle #weapons {
+  -webkit-animation: on-screen-weapons 1s 0.5s forwards;
+          animation: on-screen-weapons 1s 0.5s forwards;
+}
+#weapons li {
+  width: calc(100% / 3);
+  padding: 1em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 1;
+  outline: none;
+}
+.melee-active #weapons li {
+  cursor: auto;
+  pointer-events: none;
+}
+#weapons li:hover, #weapons li:focus {
+  background: white;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+#weapons li.active {
+  background: white;
+  -webkit-transform: scale(1.05, 1.05) translateY(-0.25em);
+          transform: scale(1.05, 1.05) translateY(-0.25em);
+}
+#weapons li.used {
+  pointer-events: none;
+  cursor: auto;
+  opacity: 0.25;
+  -webkit-transform: scale(1, 1) translateY(0);
+          transform: scale(1, 1) translateY(0);
+}
+#weapons li.used figcaption {
+  text-decoration: line-through;
+}
+#weapons figure {
+  margin: 0 auto;
+  text-align: center;
+}
+#weapons figure img {
+  margin-bottom: 1em;
+  max-height: 100px;
+}
+#weapons figcaption {
+  text-align: center;
+  margin-bottom: 1em;
+  letter-spacing: 1.8px;
+  word-spacing: 1px;
+}
+
+#user-menu {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  background: url(https://db4sgowjqfwig.cloudfront.net/campaigns/57369/assets/377938/Parchment-Body.png) 50% 0 no-repeat;
+  background-size: 110%;
+  -webkit-transition: 0.5s 0.65s ease-in-out;
+  transition: 0.5s 0.65s ease-in-out;
+}
+.start-battle #user-menu {
+  padding: 6px;
+  max-height: 200px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Battle Donald J. Trump</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <section id="end-screen"></section>
+  <section id="start-screen" class="active">
+    <div class="pop-troll-wrapper">
+      <img class="pop-troll" src="http://www.gannett-cdn.com/-mm-/28345c0779915e5dad712c71cd12fd9ac089576a/c=64-0-1536-1107&r=x404&c=534x401/local/-/media/2016/02/01/USATODAY/USATODAY/635899172550523040-trump.png" alt="" />
+    </div>
+
+    <div class="real-trump-wrapper">
+      <img src="https://graphics8.nytimes.com/images/2016/04/14/us/politics/00NYC-candidates-slide-HFSW/00NYC-candidates-slide-HFSW-blog427.png" alt="" class="real-trump" />
+    </div>
+
+    <div class="battle-animation">
+      <div class="feather">
+        <img src="https://prod.zurb.s3.amazonaws.com/avatars/23946/feather-light.png" alt="" class="feather-img" />
+      </div>
+      <div class="mirror">
+        <img src="https://2.bp.blogspot.com/-ph9lrHbSfas/UNX5HcGxp3I/AAAAAAAAScI/BF2gli3TYpc/s1600/ornate+silver+oval+frame.png" alt="" />
+      </div>
+      <div class="music">
+        <div class="left">
+          <img class="hand" src="http://www.clipartkid.com/images/15/arm-hand-clip-art-at-clker-com-vector-clip-art-online-royalty-q02vv8-clipart.png" alt="" />
+          <img class="speaker" src="https://cdn.shopify.com/s/files/1/0303/7725/t/2/assets/clio-emt-speaker.png?17591048584501076649" alt="" />
+        </div>
+        <div class="right">
+          <img class="hand" src="http://www.clipartkid.com/images/15/arm-hand-clip-art-at-clker-com-vector-clip-art-online-royalty-q02vv8-clipart.png" alt="" />
+          <img class="speaker" src="https://cdn.shopify.com/s/files/1/0303/7725/t/2/assets/clio-emt-speaker.png?17591048584501076649" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="user-menu">
+    <ul id="weapons">
+      <li data-weapon="feather" tabindex="0">
+        <figure>
+          <img src="https://1.bp.blogspot.com/-vh8f69YRmXQ/U-GF3JnITkI/AAAAAAAAFZ4/pFaOg5Xw-T4/s300/featherpq.png" alt="" />
+          <figcaption>Feather of Destiny</figcaption>
+        </figure>
+      </li>
+      <li data-weapon="music" tabindex="0">
+        <figure>
+          <img src="https://cdn.shopify.com/s/files/1/0303/7725/t/2/assets/clio-emt-speaker.png?17591048584501076649" alt="" />
+          <figcaption>Bad Music</figcaption>
+        </figure>
+      </li>
+      <li data-weapon="mirror" tabindex="0">
+        <figure>
+          <img src="https://2.bp.blogspot.com/-ph9lrHbSfas/UNX5HcGxp3I/AAAAAAAAScI/BF2gli3TYpc/s1600/ornate+silver+oval+frame.png" alt="" />
+          <figcaption>Truth Mirror</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<dialog>
+  <a id="dialog-close-button" href="#close"><span>x</span></a>
+  <div class="content">
+    <p>Bernie, you have encountered a level 99 Trump.</p>
+    <p>Prepare to battle the troll!</p>
+    <button class="continue">Continue</button>
+  </div>
+</dialog>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

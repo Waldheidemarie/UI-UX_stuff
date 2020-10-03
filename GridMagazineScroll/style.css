@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --green: #375a09;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(16, 60px);
+  grid-template-rows: repeat(40, 50px);
+  grid-auto-columns: 60px;
+  grid-auto-rows: 50px;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.page .solid-block {
+  background: var(--green);
+}
+.page .empty-block {
+  border: 20px solid var(--green);
+}
+.page .ingredient-block {
+  background: url("https://unsplash.com/photos/BgNB5cxWE5M") repeat;
+}
+.page i {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: end;
+  align-self: start;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.page .last-page-hint {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+  width: 131px;
+  height: 27px;
+}
+.page .last-page-hint .last-page-hint__content {
+  padding: 1px 0 1px 0;
+  font-size: 20px;
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+}
+.page header {
+  grid-column: 2 / 16;
+  grid-row: 4/ 14;
+  display: grid;
+  grid-template-columns: repeat(14, 60px);
+  grid-template-rows: repeat(10, 50px);
+}
+.page header .header__solid-block {
+  grid-column: 1 / 5;
+  grid-row: 1 / 5;
+}
+.page header .header__empty-block {
+  grid-column: 7 / -1;
+  grid-row: 7 / 11;
+}
+.page header .header__img {
+  grid-column: 2 / -2;
+  grid-row: 2 / 10;
+  background: url("https://unsplash.com/photos/BgNB5cxWE5M") no-repeat center;
+  background-size: cover;
+}
+.page header .header__title {
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--black);
+  font-weight: 900;
+}
+.page header .header_top-right {
+  grid-column: 10 / -2;
+  grid-row: 1 / 2;
+  justify-self: end;
+  align-self: end;
+}
+.page header .header_right {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  grid-column: 14 / 15;
+  grid-row: 2;
+  justify-self: start;
+}
+.page header .header_left {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  grid-column: 1;
+  grid-row: 9 / 10;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.page header .header_left-bottom {
+  grid-column: 2;
+  grid-row: 10;
+  justify-self: start;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.page header:hover > .header__img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.page header:hover > .header__title {
+  color: var(--white);
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.page article {
+  grid-column: 3 / -3;
+  grid-row: 17 / 25;
+  display: grid;
+  grid-template-columns: repeat(12, 60px);
+  grid-template-rows: repeat(8, 50px);
+}
+.page article .article__hint {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  grid-column: 1;
+  grid-row: 1 / 6;
+  justify-self: start;
+  font-size: 24px;
+  line-height: 36px;
+  font-style: italic;
+}
+.page article .article__title {
+  grid-column: 3 / 10;
+  grid-row: 1;
+  font-size: 48px;
+  font-weight: 900;
+}
+.page article .article__subtitle {
+  grid-column: 3 / 12;
+  grid-row: 2;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 36px;
+}
+.page article .article__content1 {
+  grid-column: 3 / -1;
+  grid-row: 3;
+  font-size: 16px;
+  line-height: 24px;
+}
+.page article .article__content2 {
+  grid-column: 3 / -1;
+  grid-row: 6;
+  font-size: 16px;
+  line-height: 24px;
+}
+.page footer {
+  grid-column: 2 / -2;
+  grid-row: -15 / -2;
+  display: grid;
+  grid-template-columns: repeat(14, 60px);
+  grid-template-rows: repeat(13, 50px);
+  margin-bottom: 50px;
+}
+.page footer .footer__solid-block {
+  grid-column: -5 / -1;
+  grid-row: 3 / 7;
+}
+.page footer .footer__empty-block {
+  grid-column: 1 / 9;
+  grid-row: 4 / 8;
+}
+.page footer .footer__img1 {
+  grid-column: 2 / 8;
+  grid-row: 1 / 6;
+  background: url("https://images.unsplash.com/photos/BgNB5cxWE5M") no-repeat center;
+  background-size: cover;
+  z-index: 2;
+}
+.page footer .footer__img2 {
+  grid-column: 6 / 14;
+  grid-row: 5 / 13;
+  background: url("https://images.unsplash.com/photos/BgNB5cxWE5M") no-repeat center;
+  background-size: cover;
+}
+.page footer .footer__ingredient-block {
+  grid-column: 3 / 7;
+  grid-row: -3 / -1;
+}
